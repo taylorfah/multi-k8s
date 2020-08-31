@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t tfah/reaact-test -f ./client/Dockerfile.dev ./client
+  - docker build -t tfah/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run -e CI=true tfah/react-test npm test
